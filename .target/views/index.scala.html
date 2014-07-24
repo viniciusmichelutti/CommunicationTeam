@@ -1,0 +1,20 @@
+@()
+
+@main("Bem vindo!") {
+
+   <h1>Entrar</h1>
+   
+   @if(flash.containsKey("error")) {
+   	<div class="error">
+   		@flash.get("error")
+   	</div>
+   }
+   
+   <form action="@routes.Application.enter()" method="POST">
+   	<input type="text" name="email" placeholder="em@@ail" />
+   	<input type="text" name="name" placeholder="name" />
+   	
+   	<input type="submit" value="->" />
+   </form>
+
+}

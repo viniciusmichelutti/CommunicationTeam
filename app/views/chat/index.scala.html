@@ -1,0 +1,15 @@
+@()
+
+@main("Sala") {
+
+	<div id="messages"></div>
+	
+	<form action="#" method="POST" id="sendMessage">
+		<div>
+			<input type="text" name="message" placeholder="type your message..." />
+		</div>
+	</form>
+
+	<input type="hidden" id="socketsUrl" value="@routes.Application.chatWeb().webSocketURL(request)" />
+	<script src="@routes.Assets.at("javascripts/chat.js")" type="text/javascript"></script>
+}

@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+* { margin:0; border:0; padding:0; }
+body { font-family: 'Open Sans', Tahoma, Verdana, 'sans-serif'; }
+
+#header a {
+	float:right;
+	line-height:24px;
+	margin:0 20px;
+	text-decoration:none;
+	color:#fff;
+	background-color:#177BBB;
+	display:block;
+	border-radius:6px;
+	padding:7px;
+	margin-top:15px;
+}
+#header h1 { float: left; font-size: 36px; line-height: 62px; margin: 0 10px; }
+
+#messages { position:absolute; top:70px; bottom:75px; width:100%; overflow-x:auto; }
+
+.message { border-bottom: 1px solid #eee; padding: 10px 10px 20px; min-height:42px; font-size:14px; }
+.message img {
+	height: 48px;
+	width: 48px;
+	float: left;
+	margin-right: 10px;
+	border-radius:500px;	
+}
+.message span { font-weight:bold; }
+.message p { color:#333; }
+.clear { clear:both; }
+
+.join { background-color:#DCF5E8; }
+.quit { background-color:#FCD9D9; }
+
+#sendMessage { position:absolute; bottom:0; left:0; right:0; height:55px; padding:10px; }
+#sendMessage input { width:100%; display:block; padding:7px 0; border:1px solid #999; }
